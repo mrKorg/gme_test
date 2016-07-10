@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <style type="text/css">
+        #page-preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #FFF;
+            z-index: 100500;
+        }
+        #page-preloader .spinner {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -25px 0 0 -25px;
+            color: #FFF;
+            text-align: center;
+        }
+    </style>
+
+    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <div id="page-preloader">
+        <span class="spinner">
+            <img src="style/img/preloader.gif" alt="">
+        </span>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-xl-6 col-xl-offset-3 form_box">
+                    <form class="form">
+                        <div id="form_items">
+                            
+                        </div>
+                        <hr>
+                        <p class="form_select">
+                            Number of licenses:
+                            <select name="number">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </p>
+                        <hr>
+                        <p class="form_total" style="display: none;">
+                            Total: <strong>$<span id="price"></span><span class="sup">us</span></strong>
+                        </p>
+                        <p class="form_btn"><input class="button" type="submit" value="Buy now" disabled></p>
+                        <p class="form_result" style="display: none">Selected plan: <span id="form_result"></span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Load CSS -->
+    <script>
+        function loadCSS(hf) {
+            var ms=document.createElement("link");ms.rel="stylesheet";
+            ms.href=hf;document.getElementsByTagName("body")[0].appendChild(ms);
+        }
+        loadCSS("style/css/bs4_grid.css");
+        loadCSS("style/css/style.css");
+    </script>
+
+    <!-- Load Scripts -->
+    <script>var scr = {"scripts":[
+            {"src" : "style/libs/jquery/jquery-3.0.0.min.js", "async" : false},
+            {"src" : "style/libs/jquery/jquery-migrate-1.4.1.min.js", "async" : false},
+            {"src" : "style/libs/jQueryFormStyler-master/jquery.formstyler.min.js", "async" : false},
+            {"src" : "style/js/test1.js", "async" : false},
+        ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+    </script>
+
+</body>
+</html>

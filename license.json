@@ -1,0 +1,7 @@
+{
+  "license" : [
+    {"name": "Basic plan #1", "price": "15"},
+    {"name": "Premium plan #2", "price": "25"},
+    {"name": "Ultimate plan #3", "price": "35"}
+  ]
+}
